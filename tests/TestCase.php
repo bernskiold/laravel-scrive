@@ -2,7 +2,7 @@
 
 namespace BernskioldMedia\LaravelScrive\Tests;
 
-use BernskioldMedia\LaravelScrive\LaravelScriveServiceProvider;
+use BernskioldMedia\LaravelScrive\ScriveServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -20,7 +20,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            LaravelScriveServiceProvider::class,
+            ScriveServiceProvider::class,
         ];
     }
 
